@@ -7,6 +7,7 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import axios from "axios";
 import { useState, useEffect } from "react";
+import Loader from "./components/Loader";
 
 export default function App() {
   const [userData, setUserData] = useState([]);
@@ -28,7 +29,8 @@ export default function App() {
     getData();
   }, [page])
 
-  let printUserData = <h1 className="text-zinc-300 font-medium tracking-wide absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Loading...</h1>
+  // let printUserData = <h1 className="text-zinc-300 font-medium tracking-wide absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Loading...</h1>
+  let printUserData = <Loader />
 
   if (userData.length > 0) {
     printUserData = userData.map((item, index) => {
