@@ -53,9 +53,9 @@ export default function App() {
       </div>
 
       <div className="pagination fixed bottom-2 w-full min-h-22 py-2 flex items-center justify-center">
-        <Stack spacing={2} className="bg-zinc-100 rounded-2xl py-2 px-4">
+        <Stack spacing={2} className="bg-zinc-100 rounded-2xl py-2 sm:px-4">
           {/* <Typography>Page: {page}</Typography> */}
-          <Pagination count={10} page={page} size="large" color="primary" onChange={handleChange} />
+          <Pagination count={10} page={page} color="primary" onChange={handleChange} />
         </Stack>
       </div>
     </div>
