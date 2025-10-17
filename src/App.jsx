@@ -32,11 +32,11 @@ export default function App() {
 
   if (userData.length > 0) {
     printUserData = userData.map((item, index) => {
-      return <div className="card h-52 md:h-48 lg:h-44">
-        <div className="img w-full h-full rounded-2xl overflow-hidden">
+      return <div className="card h-52 md:h-48 lg:h-44 hover:scale-105 lg:hover:scale-110 duration-200 rounded-2xl overflow-hidden bg-zinc-800">
+        <a href={item.url} className="img w-full h-full">
           <img className="w-full h-full object-cover" src={item.download_url} alt="" />
-        </div>
-        {/* <h2 className="text-xl font-medium tracking-wide my-1 text-center">Alexa Mendis</h2> */}
+        </a>
+        <h2 className="text-xl font-medium tracking-wide my-1 text-center">Alexa Mendis</h2>
       </div>
     })
   }

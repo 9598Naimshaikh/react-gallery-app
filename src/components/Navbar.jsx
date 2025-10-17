@@ -13,7 +13,7 @@ export default function Navbar() {
                     <Linkedin />
                 </a>
                 <div className="">
-                    <button className="bg-blue-500 px-3 py-1 rounded-full font-medium tracking-wide hover:scale-110 duration-200 transition-all active:scale-90">Login</button>
+                    <button className="bg-blue-500 px-4 py-2 rounded-full font-medium tracking-wide hover:scale-110 duration-200 transition-all active:scale-90">Login</button>
                 </div>
             </nav>
         </header>
